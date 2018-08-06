@@ -77,8 +77,8 @@
                             <li><a class="smooth-scroll" href="#about">About</a></li>
                             <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
                             <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                            <li><a class="smooth-scroll" href="#">Login</a></li>
-                            <li><a class="smooth-scroll" href="#">Register</a></li>
+                            <li><a class="smooth-scroll" href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+                            <li><a class="smooth-scroll" href="#" data-toggle="modal" data-target="#exampleModal2">Register</a></li>
                         </ul>
                     </div>
 
@@ -89,6 +89,83 @@
 
     </header>
 
+    <!-- Modal for login -->
+    <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Member Login</h4>	
+                     
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                            </div>        
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="text-align: center;">
+                        <a href="#" >Forgot Password ?</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+  <!-- model for register -->
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+              
+              <h2 class="modal-title" id="exampleModalLabel">Register</h2>
+              <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+             
+            </div>
+            <div class="modal-body">
+                    <div class="signup-form">
+                            <form >
+       
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                        <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                                    </div>        	
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                                </div>        
+                                
+                                
+                            </form>
+                            
+                        </div>
+            </div>
+            <div class="modal-footer">
+                 
+            <label class="checkbox-inline" style="float: left;"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label><br><br>
+
+             <button type="submit" class="btn btn-primary btn-lg btn-block">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Home -->
     <section id="home">
 
@@ -148,13 +225,13 @@
 
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" data-toggle="modal" data-target="#examplecon">
 
                             <div class="service-item-icon">
                                 <i class="fa fa-pencil fa-3x"></i>
                             </div>
 
-                            <div class="service-item-title">
+                            <div class="service-item-title" >
                                 <h3>Design and construction</h3>
                             </div>
 
@@ -164,9 +241,58 @@
                             </div>
 
                         </div>
-
-
                     </div>
+
+                    <div class="modal fade" id="examplecon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                  <h2 class="modal-title" id="exampleModalLabel">Design and construction</h2>
+                               
+                                </div>
+                                <div class="modal-body">
+                                        <div class="row">
+                                                <div class="col-md-4">
+                                                  <div class="thumbnail">
+                                                    <a href="#">
+                                                      <img src="img/villa.jpg" alt="Lights" style="width:100%">
+                                                      <div class="caption">
+                                                        <p>villa</p>
+                                                      </div>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="thumbnail">
+                                                    <a href="#">
+                                                      <img src="img/appartment.jpg" alt="Nature" style="width:100%">
+                                                      <div class="caption">
+                                                        <p>appartment</p>
+                                                      </div>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="thumbnail">
+                                                    <a href="#">
+                                                      <img src="img/bg-about.jpg" alt="Fjords" style="width:100%">
+                                                      <div class="caption">
+                                                        <p>Heavy industry</p>
+                                                      </div>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                </div>
+                             
+                              </div>
+                            </div>
+                          </div>
+
+
                     <div class="col-md-4 col-sm-6">
 
                         <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
